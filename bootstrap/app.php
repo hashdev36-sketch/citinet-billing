@@ -5,7 +5,6 @@ use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
 
 return Application::configure(basePath: dirname(__DIR__))
-        ->withProviders([App\\Providers\\AppServiceProvider::class])
     ->withMiddleware(function (Middleware $middleware) {
         // Paystack cannot send a CSRF token, so its webhook endpoint is exempt.
         // It is still authenticated via HMAC signature check inside the controller —
