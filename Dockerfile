@@ -18,4 +18,4 @@ RUN mkdir -p bootstrap/cache storage/framework/cache storage/framework/sessions 
     && chmod -R 775 bootstrap/cache storage
 RUN composer install --no-dev --optimize-autoloader --no-interaction
 EXPOSE 8080
-CMD php artisan config:clear && php artisan route:clear && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=${PORT:-8080}
+CMD echo "=== DB ENV CHECK ===" && env | grep -E "^DB_" && echo "=====================" && php artisan config:clear && php artisan route:clear && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=${PORT:-8080}
