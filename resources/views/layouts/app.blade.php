@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ asset('css/citinet-brand.css') }}">
     @stack('styles')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <div class="citi-nav">
@@ -37,7 +38,11 @@
     @endif
 
     <main>
-        @yield('content')
+        @isset($slot)
+            {!! $slot !!}
+        @else
+            @yield('content')
+        @endisset
     </main>
 
     <footer class="citi-footer">
