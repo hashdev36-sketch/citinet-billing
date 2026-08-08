@@ -1,0 +1,55 @@
+﻿
+  GET|HEAD        / .............................. home ΓÇ║ HomeController@index
+  GET|HEAD        admin/dashboard admin.dashboard ΓÇ║ Admin\DashboardControllerΓÇª
+  GET|HEAD        admin/login ... admin.login ΓÇ║ Admin\AuthController@showLogin
+  POST            admin/login ............ admin. ΓÇ║ Admin\AuthController@login
+  POST            admin/logout .... admin.logout ΓÇ║ Admin\AuthController@logout
+  GET|HEAD        admin/orders admin.orders.index ΓÇ║ Admin\OrderController@indΓÇª
+  GET|HEAD        admin/orders/export admin.orders.export ΓÇ║ Admin\OrderControΓÇª
+  GET|HEAD        admin/packages admin.packages.index ΓÇ║ Admin\PackageControllΓÇª
+  POST            admin/packages admin.packages.store ΓÇ║ Admin\PackageControllΓÇª
+  GET|HEAD        admin/packages/create admin.packages.create ΓÇ║ Admin\PackageΓÇª
+  PUT|PATCH       admin/packages/{package} admin.packages.update ΓÇ║ Admin\PackΓÇª
+  DELETE          admin/packages/{package} admin.packages.destroy ΓÇ║ Admin\PacΓÇª
+  GET|HEAD        admin/packages/{package}/edit admin.packages.edit ΓÇ║ Admin\PΓÇª
+  GET|HEAD        admin/sites . admin.sites.index ΓÇ║ Admin\SiteController@index
+  POST            admin/sites . admin.sites.store ΓÇ║ Admin\SiteController@store
+  GET|HEAD        admin/sites/create admin.sites.create ΓÇ║ Admin\SiteControlleΓÇª
+  PUT|PATCH       admin/sites/{site} admin.sites.update ΓÇ║ Admin\SiteControlleΓÇª
+  DELETE          admin/sites/{site} admin.sites.destroy ΓÇ║ Admin\SiteControllΓÇª
+  GET|HEAD        admin/sites/{site}/edit admin.sites.edit ΓÇ║ Admin\SiteControΓÇª
+  GET|HEAD        admin/vouchers admin.vouchers.index ΓÇ║ Admin\VoucherControllΓÇª
+  GET|HEAD        admin/vouchers/import admin.vouchers.import.form ΓÇ║ Admin\VoΓÇª
+  POST            admin/vouchers/import admin.vouchers.import ΓÇ║ Admin\VoucherΓÇª
+  GET|HEAD        api/packages ............................. routes/api.php:17
+  GET|HEAD        api/user ................................. routes/api.php:21
+  GET|HEAD        checkout/callback checkout.callback ΓÇ║ CheckoutController@caΓÇª
+  POST            checkout/{package} checkout.initiate ΓÇ║ CheckoutController@iΓÇª
+  GET|HEAD        confirm-password password.confirm ΓÇ║ Auth\ConfirmablePassworΓÇª
+  POST            confirm-password .. Auth\ConfirmablePasswordController@store
+  GET|HEAD        dashboard ............ dashboard ΓÇ║ DashboardController@index
+  GET|HEAD        dashboard/orders/{order} dashboard.orders.show ΓÇ║ DashboardCΓÇª
+  POST            email/verification-notification verification.send ΓÇ║ Auth\EmΓÇª
+  GET|HEAD        forgot-password password.request ΓÇ║ Auth\PasswordResetLinkCoΓÇª
+  POST            forgot-password password.email ΓÇ║ Auth\PasswordResetLinkContΓÇª
+  GET|HEAD        login ... login ΓÇ║ Auth\AuthenticatedSessionController@create
+  POST            login ............ Auth\AuthenticatedSessionController@store
+  GET|HEAD        login-with-redirect login.with-redirect ΓÇ║ routes/web.php:36
+  POST            logout logout ΓÇ║ Auth\AuthenticatedSessionController@destroy
+  GET|HEAD        packages .......... packages.index ΓÇ║ PackageController@index
+  GET|HEAD        packages/{package} .. packages.show ΓÇ║ PackageController@show
+  PUT             password .. password.update ΓÇ║ Auth\PasswordController@update
+  GET|HEAD        register ... register ΓÇ║ Auth\RegisteredUserController@create
+  POST            register ............... Auth\RegisteredUserController@store
+  POST            reset-password password.store ΓÇ║ Auth\NewPasswordController@ΓÇª
+  GET|HEAD        reset-password/{token} password.reset ΓÇ║ Auth\NewPasswordConΓÇª
+  GET|HEAD        sanctum/csrf-cookie sanctum.csrf-cookie ΓÇ║ Laravel\Sanctum  ΓÇª
+  GET|HEAD        storage/{path} storage.local ΓÇ║ vendor/laravel/framework/srcΓÇª
+  PUT             storage/{path} storage.local.upload ΓÇ║ vendor/laravel/framewΓÇª
+  GET|HEAD        up vendor/laravel/framework/src/Illuminate/Foundation/ConfiΓÇª
+  GET|HEAD        verify-email verification.notice ΓÇ║ Auth\EmailVerificationPrΓÇª
+  GET|HEAD        verify-email/{id}/{hash} verification.verify ΓÇ║ Auth\VerifyEΓÇª
+  POST            webhooks/paystack webhooks.paystack ΓÇ║ PaystackWebhookControΓÇª
+
+                                                           Showing [51] routes
+

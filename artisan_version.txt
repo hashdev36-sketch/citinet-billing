@@ -1,0 +1,8 @@
+﻿php.exe : Could not open input file: artisan
+At line:1 char:211
++ ... oding utf8; & 'C:\Program Files\WinGet\Packages\PHP.PHP.8.3_Microsoft ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Could not open input file: artisa 
+   n:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
